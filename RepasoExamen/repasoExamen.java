@@ -61,7 +61,16 @@ public static void cifras(int n){
 	}
 
 //separar dígitos y darle la vuelta al número
-public static void cifraAlReves(){
+public static void cifraAlReves(int n){
+	int digitos=0;
+	while(n>0){
+		n=n/10;
+		digitos++;
+		System.out.println(n);
+	
+	}	
+	
+	
 	
 }
 

@@ -7,17 +7,12 @@ public class Divisores {
 Scanner sc=new Scanner(System.in);
 System.out.println("Introduce número:");
 int n=sc.nextInt();
-int d=1;
-int c=0;
-
-while(c<n){
-	c++;
-	d++;
-	if(n%d==0){
-		System.out.println(d);
-	}
+int digitos=0;
+while(n>0){
+	n=n/10;
+	digitos++;
 	
-}
-	}
+}System.out.println(digitos);
 
+}
 }
