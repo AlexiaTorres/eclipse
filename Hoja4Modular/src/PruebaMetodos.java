@@ -10,23 +10,25 @@ System.out.println("Introduce el número del ejercicio: ");
 int opc=teclado.nextInt();
 	
 switch (opc) {
-case 1:  //INCOMPLETO, LAPSUS, NO SÉ HACERLO
+case 1:  //INCOMPLETO,  NO SÉ HACERLO
 	
 	int n;
-	int i=1;
-
+	int i;
+    boolean primo;
 	System.out.println("introduce un número para ver los numeros primos que hay hasta éste:");
 
 	n=teclado.nextInt();
+	i=1;
 	
 	while(i<=n){
-		boolean primo=TodosLosMetodos.Primo(n);
+		primo=TodosLosMetodos.Primo(i);//mi único error era que aquí ponía (n) en lugar de (i)
 
 		if (primo){
 		
 		System.out.println(i);
 		
-		}i++;
+		}
+		i++;
 	}
 
 	break;
@@ -88,10 +90,89 @@ case 7:
 	divisor=TodosLosMetodos.DivisorComun(a, b, c);
 	
 	System.out.println(divisor);
+
+
+case 9:
 	
+	int fibo=TodosLosMetodos.ejercicio09();
+	primo=TodosLosMetodos.Primo(fibo);
+	
+		
+	
+	while(primo){
+		System.out.println(fibo);	
+	}
+	
+case 10:
+	boolean perfect;
+	
+	System.out.println("Introduce un número para ver si es número perfecto:");
+	n=teclado.nextInt();
+	
+perfect=TodosLosMetodos.ejercicio10(n);
+System.out.println(perfect);
 	
 
-}
+
+case 11:
+	
+	int c2=1;
+
+	while (true){
+		c2++;
+		TodosLosMetodos.ejercicio11(c2);
+		
+		
+	}
+
+	
+case 12:	
+	
+	
+case 13:
+	
+	boolean amigo;
+	
+	System.out.println("Introduce dos números para ver si son amigos:");
+    a=teclado.nextInt();
+    b=teclado.nextInt();
+	
+    amigo=TodosLosMetodos.ejercicio13(a, b);
+    
+    if (amigo){
+    	System.out.printf("Los números %d y %d son amigos",a,b);
+    }else{
+    	System.out.printf("Los números %d y %d no son amigos",a,b);
+    }
+	
+case 14:
+	
+	
+	
+case 15:
+
+	int base;
+	int exp;
+	int potencia;
+	
+	System.out.println("Introduce una base y un exponente para ver el número resultante:");
+	System.out.println("Base:");
+	base=teclado.nextInt();
+	System.out.println("Exponente:");
+	exp=teclado.nextInt();
+	
+	potencia=TodosLosMetodos.ejercicio15(base, exp);
+	
+	System.out.println(potencia);
+
+
+
+
+}	
+
+
+	
+
 	}
 
 }
