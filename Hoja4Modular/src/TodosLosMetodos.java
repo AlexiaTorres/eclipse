@@ -179,15 +179,6 @@ public static boolean ejercicio10(int n){
 			System.out.println(c2);
 		}	
 		}
-		
-	
-//serie 
-	/* PENSARLO CUANDO
-	 * 
-	 * ESTÉ
-	 * EN
-	 * CONDICIONES
-	 */
 	
 
 //NÚMEROS AMIGOS
@@ -225,13 +216,6 @@ public static boolean ejercicio10(int n){
 		
 		
 	}
-	
-	
-//TODOS LOS NUMEROS AMIGOS DEL 1 AL 100	
-	
-	
-	
-	
 	
 	
 //potencia

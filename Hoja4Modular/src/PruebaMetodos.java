@@ -10,7 +10,7 @@ System.out.println("Introduce el número del ejercicio: ");
 int opc=teclado.nextInt();
 	
 switch (opc) {
-case 1:  //INCOMPLETO,  NO SÉ HACERLO
+case 1: 
 	
 	int n;
 	int i;
@@ -124,9 +124,6 @@ case 11:
 		
 		
 	}
-
-	
-case 12:	
 	
 	
 case 13:
@@ -144,9 +141,6 @@ case 13:
     }else{
     	System.out.printf("Los números %d y %d no son amigos",a,b);
     }
-	
-case 14:
-	
 	
 	
 case 15:
