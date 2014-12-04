@@ -196,8 +196,148 @@ c++;
 }
 break;	
 	
+case 12:
+	System.out.println("serie: s=1/1! + 2² + 3³/3! + 5⁵/5! + 7⁷/7!...");
+	String s="";
+	n=5;
+	c=1;
+	cp=0;
+	x=1;
+	boolean px;
+	//boolean p;
+	
+	while(cp<n){
+		p=TodosLosMetodos.primo(c);
+		px=TodosLosMetodos.primo(x);
+		fact=TodosLosMetodos.factorial(x);
+		if(p && px){
+			cp++;
+			s=s + " " + Math.pow(c, c)+ " / " + fact + " + " ;
+		}
+		c++;
+		x++;
+	}
+ System.out.println(s);
 
+ break;
+ 
+case 13:
+	System.out.println("Escribe una función “DiasMes”, a la que le pasamos un mes (en formato numérico 1=Enero, 2=Febrero, etc, y nos dice el número de días que tiene ese mes.");
+ 
+	System.out.println("Ingresa mes: ");
+	int mes=teclado.nextInt();
+ 
+	String dias=TodosLosMetodos.diasMes(mes);
+	System.out.println(dias + "dias");
 
+ break;
+ 
+case 14:
+	System.out.println("Escribe la función “DiasMes2” a la que le pasas un mes y un año y te dice cuántos días tiene ese mes, teniendo en cuenta si el año es bisiesto o no");
+ 
+	System.out.println("Introduce mes: ");
+	mes=teclado.nextInt();
+	System.out.println("Introduce año: ");
+	int anyo=teclado.nextInt();
+ 
+ int dm=TodosLosMetodos.mesBisiesto(mes, anyo);
+ System.out.println("Tiene "  + dm + " dias");
+ 
+ break;
+ 
+case 15:
+	
+	int año;
+	int diia;
+	
+	int comprobar_año;
+
+	System.out.println("ingresa año");
+	 año = teclado.nextInt();
+
+	System.out.println("ingresa mes: del 1 al 12");
+	 mes = teclado.nextInt();
+
+	System.out.println("ingresa dia");
+	 diia = teclado.nextInt();
+
+	do{
+	System.out.println("El año es bisiesto? Si->1,  No->2");
+	 comprobar_año = teclado.nextInt();
+	}while(comprobar_año>2 || comprobar_año==0);
+
+	int modulo_mes = TodosLosMetodos.modulo_mes(mes,comprobar_año);
+
+	//Formula para saber el dia 
+	int A = (año-1) % 7;
+	int D = diia % 7;
+	int DM = (((año-1)/4) - (3*((año-1)/100+1)/4)) % 7;
+	int resultado = (A + D + modulo_mes + DM) % 7;
+
+	    String busca_dia = TodosLosMetodos.Busca_Dia(resultado);
+	    System.out.println("El dia Es: " + busca_dia);
+	    
+	    break;
+	 case 16:  
+		 
+		 int nDia;
+		 int nMes;
+		 int dDia = 0;
+		 
+		 System.out.println("Introducir dia: ");
+         nDia=teclado.nextInt();
+		 System.out.println("Introducir mes (número del 1 al 12): ");
+		 nMes=teclado.nextInt();	 
+		 
+		 
+			switch(nMes){
+			case 1:
+				dDia=nDia;
+				break;
+			case 2:
+				dDia=nDia+31;
+				break;
+			case 3:
+				dDia=nDia+59;
+				break;
+			case 4:
+				dDia=nDia+90;
+				break;	
+			case 5:
+				dDia=nDia+120;
+				break;
+			case 6:
+				dDia=nDia+151;
+				break;	
+			case 7:
+				dDia=nDia+181;
+				break;	
+			case 8:
+				dDia=nDia+212;
+				break;	
+			case 9:
+				dDia=nDia+243;
+				break;	
+			case 10:
+				dDia=nDia+273;
+				break;
+			case 11:
+				dDia=nDia+304;
+				break;	
+			case 12:
+				dDia=nDia+334;
+				break;		
+			}
+		
+			System.out.printf("El %d º dia del año es el %d de %d",dDia,nDia,nMes);
+
+	 case 17:
+		 
+		 String dia[]={"Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo"};
+		int numDia;
+		
+		 
+ 
 }
 }
 
