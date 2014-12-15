@@ -10,29 +10,18 @@ public class MainArrays {
 		case 1: 
 			int a[]=new int[10];
 			int n=a.length;
-			int i=0;
-			int mayor;
-			int posmayor=0;
-			while(i<n-1){
-				System.out.println("Introduce el elemento "+i);
-				a[i]=teclado.nextInt();
-				i++;
-			}
+			int menor;
+			MetodosArrays.llenarArray(a,n);
+			MetodosArrays.visualizarArray(a, n);
+			MetodosArrays.buscarMayor(a, n);
+			menor=MetodosArrays.buscarMenor(a, n);
+			MetodosArrays.borrarElemento(a, n, menor);
+			MetodosArrays.visualizarArray(a, n);
 
-			i=1;
-			mayor=a[0];
-			while(i<n-1){
-				if(a[i]>mayor){
-					mayor=a[i];
-					//posmayor=i;
-					//System.out.println(posmayor);
-				}
-				
-				i++;
-			}
-			System.out.printf("El número mayor (%d) está en la posición %d",mayor,posmayor);
-			System.out.println(a[i]);
-
+			//por qué al hacer el método buscarMenor como int, con return, se me jode todo?
+			
+			
+			
 		}
 	}
 }
