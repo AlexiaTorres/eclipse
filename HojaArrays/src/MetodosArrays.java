@@ -24,7 +24,7 @@ public static void visualizarArray (int a[], int n){
 	}
 }
 
-public static void buscarMayor(int a[], int n){
+public static void visualizaMayor(int a[], int n){  //le cambiamos el nombre a buscar x visualizar ya que no devuelve nada
 	
 	int i=1;
 	int posmayor = 0;
@@ -54,7 +54,9 @@ public static int buscarMenor(int a[], int n){
 		}
 		i++;
 	}
-return menor;
+return posmenor; //cambiamos el metodo para que devuelva la posicion que ocupa el numero menor,
+		// si luego queremos un metodo que nos devuelva el menor valor de un array haremos le metodo
+		// buscarMenorDato
 }
 
 public static void borrarElemento(int a[],int n,int dato){
