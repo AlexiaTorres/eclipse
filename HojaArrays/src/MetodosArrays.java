@@ -59,9 +59,9 @@ return posmenor; //cambiamos el metodo para que devuelva la posicion que ocupa e
 		// buscarMenorDato
 }
 
-public static void borrarElemento(int a[],int n,int dato){
-	
-	int i = dato;
+public static void borrarElemento(int a[],int n,int posicion){ //cambio de nomenglatura
+	//no estamos borrando un elemento igual a algo, estamos borrando un elemento que ocupa una determinada posicion
+	int i = posicion;
 	
 	while(i<=n-2){
 		a[i]=a[i+1];
