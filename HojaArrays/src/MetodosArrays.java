@@ -130,9 +130,25 @@ public static boolean primo(int n){
 		return false;
 	}
 	
+}
+
+//BUSQUEDA DE UN DATO DEVOLVIENDO TRUE O FALSE
+
+public static boolean busquedaConBoolean(int a[], int n, int dato){
+	int i=0;
+	int pos=-1;
+	boolean b=false;
 	
-	
-	
+	while(i<=n-1 && pos==-1){
+		if(a[i]==dato){
+			pos=i;
+			b= true;
+		}else{
+			b= false;
+		}
+		i++;
+	}
+	return b;
 }
 
 

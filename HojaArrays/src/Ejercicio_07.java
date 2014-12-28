@@ -8,6 +8,7 @@ public class Ejercicio_07 {
 		int i=0;
 		int suma=0;
 		int prom;
+		boolean promedioEncontrado;
 		
 		MetodosArrays.llenarArray(a, n);
 		MetodosArrays.visualizarArray(a, n);
@@ -18,14 +19,15 @@ public class Ejercicio_07 {
 		}
 		prom=suma/n;
 		
-		while(i<=n-1){
-			if(a[i]==prom){
-				System.out.printf("El promedio (%d) está almacenado en el vector",prom);
-			}else{
-				System.out.printf("El promedio (%d) no está almacenado en el vector",prom);				
-			}
-			i++;
-		}
+		promedioEncontrado=MetodosArrays.busquedaConBoolean(a, n, prom);
+		
+		
+			if (promedioEncontrado){
+			System.out.printf("El promedio (%d) está almacenado en el vector",prom);
+		    }else{
+			System.out.printf("El promedio (%d) no está almacenado en el vector",prom);				
+		    }
+		
 		
 	}
 
