@@ -15,6 +15,5 @@ public class Ejercicio_01 {
 	  menor=MetodosArrays.buscarMenor(a,n);
 			MetodosArrays.borrarElemento(a, n, menor);
 			MetodosArrays.visualizarArray(a, n);
-
 	}
 }
