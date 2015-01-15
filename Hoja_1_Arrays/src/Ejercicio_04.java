@@ -1,7 +1,10 @@
-
+/*
+ * 4. Almacenar en un vector de 10 posiciones los 10 números primos 
+ * comprendidos entre 100 y 300. 
+ * Luego mostrarlos en pantalla.
+ */
 public class Ejercicio_04 {
-
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		
 		int n=10;
 		int a[]=new int[n];
@@ -19,7 +22,5 @@ public class Ejercicio_04 {
 			}
 			num++;
 		}
-
 	}
-
 }

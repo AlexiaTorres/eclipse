@@ -1,4 +1,7 @@
-
+/*
+ *Leer 10 números enteros, almacenarlos en un vector 
+ * y determinar cuántas veces está repetido el mayor.
+ */
 public class Ejercicio_06 {
 public static void main(String[] args) {
 	int n=10;
@@ -10,7 +13,6 @@ public static void main(String[] args) {
 	MetodosArrays.llenarArray(a, n);
 	MetodosArrays.visualizarArray(a, n);
 	
-	
 	while(i<=n-1){
 		mayor= MetodosArrays.buscarMayor(a, n);
 		if(a[i]==mayor){
@@ -18,8 +20,6 @@ public static void main(String[] args) {
 		}
 		i++;
 	}
-
-	System.out.println("El número mayor está repetido "+repetido+" veces");
-	
+	System.out.println("El número mayor está repetido "+repetido+" veces");	
 }
 }

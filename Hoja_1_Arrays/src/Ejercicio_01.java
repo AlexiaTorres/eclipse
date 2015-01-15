@@ -1,3 +1,10 @@
+/*
+ * 1. Diseñe un módulo que permita eliminar 
+ * el elemento más pequeño de un vector.
+ * Leer 10 enteros, almacenarlos en un vector y 
+ * determinar en qué posición del vector está el mayor número leído.
+ */
+
 public class Ejercicio_01 {
 
 	public static void main(String[] args) {

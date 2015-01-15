@@ -1,6 +1,8 @@
-
+/*
+ *Diseñar una función que se utilice para 
+ * eliminar de un array de números enteros todos los elementos pares.
+ */
 public class Ejercicio_13 {
-
 	public static void main(String[] args) {
 
 		int n=10;
@@ -16,12 +18,9 @@ public class Ejercicio_13 {
 			}
 			i++;
 		}
-
 		System.out.println("\n----------------");
 		MetodosArrays.visualizarArray(a, n);
-		
 	}
-
 }
 
 

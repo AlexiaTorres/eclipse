@@ -1,6 +1,8 @@
-
+/*
+ *Leer 10 números enteros, almacenarlos en un vector y determinar si el promedio 
+ * entero de estos datos está almacenado en el vector.
+ */
 public class Ejercicio_07 {
-
 	public static void main(String[] args) {
 		
 		int n=10;
@@ -18,17 +20,12 @@ public class Ejercicio_07 {
 			i++;
 		}
 		prom=suma/n;
-		
-		promedioEncontrado=MetodosArrays.busquedaConBoolean(a, n, prom);
-		
-		
+   promedioEncontrado=MetodosArrays.busquedaConBoolean(a, n, prom);
+				
 			if (promedioEncontrado){
 			System.out.printf("El promedio (%d) está almacenado en el vector",prom);
 		    }else{
 			System.out.printf("El promedio (%d) no está almacenado en el vector",prom);				
 		    }
-		
-		
-	}
-
-}
+			}
+            }

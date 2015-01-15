@@ -1,9 +1,13 @@
+/*
+ *Diseñar una función que nos permita eliminar de un array 
+ * de números enteros todos aquellos elementos  iguales a uno dado
+ */
+
 import java.util.Scanner;
 
 //HE RELLENADO CON 0 EL ESPACIO DEL DATO BORRADO
 
 public class Ejercicio_12 {
-
 	public static void main(String[] args) {
 Scanner teclado= new Scanner(System.in);
 
@@ -12,8 +16,7 @@ Scanner teclado= new Scanner(System.in);
 		int i=0;
 		int pos=-1;
 		int dato;
-		
-		
+				
 		MetodosArrays.llenarArray(a, n);
 		MetodosArrays.visualizarArray(a, n);
 		
@@ -27,9 +30,6 @@ Scanner teclado= new Scanner(System.in);
 			}
 			i++;
 		}
-
 		MetodosArrays.visualizarArray(a, n);
-		
 	}
-
 }

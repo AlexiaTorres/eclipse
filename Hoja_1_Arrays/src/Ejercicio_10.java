@@ -1,6 +1,8 @@
-
+/*
+ * Leer 10 números enteros, almacenarlos en un vector y calcularle el factorial 
+ * a cada uno de los números leídos almacenándolos en otro vector.
+ */
 public class Ejercicio_10 {
-
 	public static void main(String[] args) {
 		
 		int n=10;
@@ -20,7 +22,6 @@ public class Ejercicio_10 {
 		System.out.println("Vector de factoriales: ");
 		
 		while(i<=n-1 && j<=n-1){
-		
 			while(c<=a[i]){
 				f=f*c;
 				c++;
@@ -31,5 +32,4 @@ public class Ejercicio_10 {
 			i++;
 		}
 	}
-
 }

@@ -1,6 +1,8 @@
-
+/*
+ * Leer 10 números enteros, almacenarlos en un vector y determinar
+ * cuántos números de los almacenados en dicho vector terminan en 15.
+ */
 public class Ejercicio_11 {
-
 	public static void main(String[] args) {
 		
 		int n=10;
@@ -18,7 +20,5 @@ public class Ejercicio_11 {
 			i++;
 		}
 		System.out.printf("\nHay %d números que terminan en 15",cont);
-		
 	}
-
 }

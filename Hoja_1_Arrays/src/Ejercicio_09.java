@@ -1,9 +1,11 @@
-
+/*
+ * Leer 10 números enteros, almacenarlos en un vector 
+ * y determinar en qué posición está el número con mas dígitos.
+ */
 public class Ejercicio_09 {
 
 	//SOLO HE SUMADO LOS DIGITOS DE CADA ELEMENTO
 	//FALTA BVUSCAR LA POSICIÓN DEL MAYOR
-	
 	
 	public static void main(String[] args) {
 		
@@ -31,9 +33,5 @@ public class Ejercicio_09 {
 			cifras=0;
 			i++;
 		}
-		
-		
-
-	}
-
+}
 }

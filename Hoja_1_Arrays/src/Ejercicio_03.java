@@ -1,10 +1,10 @@
-
+/*
+ * Cargar un vector de 10 posiciones con los 10 
+ * primeros elementos de la serie de Fibonacci y mostrarlo en pantalla.
+ */
 public class Ejercicio_03 {
+    public static void main(String[] args) {
 
-	public static void main(String[] args) {
-		
-
-		
 		int a[]=new int [10];
 		
 		int num=0;
@@ -19,7 +19,5 @@ public class Ejercicio_03 {
 			System.out.println("[" + a[j] + "]");
 			num++;
 		}
-
 	}
-
 }

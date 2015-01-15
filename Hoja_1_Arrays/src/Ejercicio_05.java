@@ -1,6 +1,8 @@
-
+/*
+ *Leer 10 números enteros, almacenarlos en un vector y determinar 
+ * en qué posiciones se encuentran los números terminados en 4.
+ */
 public class Ejercicio_05 {
-
 	public static void main(String[] args) {
 
 		int n=10;
@@ -16,7 +18,5 @@ public class Ejercicio_05 {
 			}
 			i++;
 		}
-		
 	}
-
 }

@@ -1,4 +1,7 @@
-
+/*
+ *Leer 10 números enteros, almacenarlos en un vector y determinar en qué 
+ * posición está el número cuya suma de dígitos sea la mayor.
+ */
 public class Ejercicio_08 {
 
 	//SUMAR CIFRAS DE CADA ELEMENTO DEL ARRAY
@@ -17,7 +20,6 @@ public class Ejercicio_08 {
 		MetodosArrays.visualizarArray(a, n);
 		
 		while(i<=n-1){
-			
 			num=a[i];
 			while(num>9){
 				r=num%10;
@@ -26,16 +28,8 @@ public class Ejercicio_08 {
 			}
 			suma=suma+num;
 			System.out.println(suma);
-			
 			suma=0;
-			
 			i++;
 		}
-		
-	
-
-		
-
 	}
-
 }
