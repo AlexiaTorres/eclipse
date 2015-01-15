@@ -1,9 +1,12 @@
+/*
+ *Escriba un programa que, dado un array de enteros, busque si un número 
+obtenido por la entrada estándar se encuentra en el array e imprima la 
+primera posición en la que se encuentra el número.  
+ */
+
 import java.util.Scanner;
 
-//INCOMPLETO
-
 public class Ejercicio_13 {
-
 	public static void main(String[] args) {
 Scanner teclado=new Scanner(System.in);
 
@@ -26,7 +29,5 @@ Scanner teclado=new Scanner(System.in);
 			
 			i++;
 		}
-		
 	}
-
 }

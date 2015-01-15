@@ -1,6 +1,9 @@
-
+/*
+ * Hacer un programa que dados dos arrays determine si son iguales. 
+ * Probarlo con los arrays [1,2,3] y [1,2,3], 
+ * [1,2,3,4] y [1,2,3] y [1,2,3] y [1,2,2] 
+ */
 public class Ejercicio_04 {
-
 	public static void main(String[] args) {
 
 		int a[]={1,2,3};
@@ -31,8 +34,5 @@ public class Ejercicio_04 {
 		}else{
 			System.out.println("Los arrays a y d son distintos");
 		}	
-
 	}
-
-
 }

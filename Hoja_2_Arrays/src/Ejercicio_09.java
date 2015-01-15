@@ -1,8 +1,21 @@
+/*
+ * Escribir un programa que lea un número de enteros entre 1 y 100 de la 
+entrada estándar y genere un histograma con las frecuencias de cada entero 
+en la secuencia.  Para representar las barras del histograma utilizar 
+secuencias del carácter ‘*’. Por ejemplo, la secuencia: 1, 1, 20, 1, 2, 20, 3, 3, 
+3,4,4,4,33,3  generaría la siguiente salida: 
+ 
+1: *** 
+2: * 
+3: **** 
+4: *** 
+20:** 
+33:* 
+ */
+
 import java.util.Scanner;
 
-
 public class Ejercicio_09 {
-
 	public static void main(String[] args) {
 	Scanner teclado=new Scanner(System.in);
 	
@@ -27,21 +40,9 @@ public class Ejercicio_09 {
 				Metodos.asteriscos(veces);
 				System.out.println();
 			}
-
 			i++;
-			
 		}
-
 		num++;
 	}
-	
-	
-
-	
-
-	}
-
-	
-
-	
+}
 }
