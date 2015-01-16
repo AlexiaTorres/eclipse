@@ -27,11 +27,13 @@ public class Ejercicio_09 {
 				num=num/10;
 			}
 			cifras++;
-			System.out.println(cifras);
+			a[i]=cifras;
+			System.out.println(a[i]);
 			
 			num=0;
 			cifras=0;
 			i++;
 		}
+		MetodosArrays.visualizarMayor(a, n);
 }
 }

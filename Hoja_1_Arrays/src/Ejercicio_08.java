@@ -27,9 +27,11 @@ public class Ejercicio_08 {
 				num=num/10;
 			}
 			suma=suma+num;
-			System.out.println(suma);
+			a[i]=suma;
+			System.out.println(a[i]);
 			suma=0;
 			i++;
 		}
+		MetodosArrays.visualizarMayor(a, n);
 	}
 }

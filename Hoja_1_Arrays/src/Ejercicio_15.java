@@ -18,7 +18,6 @@ int n=10;
 int a[]=new int[n];
 int dato;
 int i=0;
-int posiciones[];
 
 //RELLENAR ARRAY CON NÚMEROS ALEATORIOS
 
@@ -42,26 +41,30 @@ buscar(a,n,dato);
 public static void buscar(int a[], int n, int dato){
 
 	int veces=0;
+    int i=0;
 	int j=0;
-	int posiciones[];
-	
-	int i=0;
 	
 	while(i<=n-1){
 		if(a[i]==dato){
 			veces++;
 		}	
+		i++;
 	}
-	posiciones=new int[veces];
+
+	int posiciones[]=new int[veces];
+	i=0;
 	
 while(j<=veces-1){	
+	while(i<=n-1){	
 	
 		if(a[i]==dato){
 			posiciones[j]=i;
-			j++;
+			System.out.println("["+posiciones[j]+"]");
 		}
 	i++;
 	}
-MetodosArrays.visualizarArray(posiciones, veces);
+	j++;
+}
+
 }	
 }

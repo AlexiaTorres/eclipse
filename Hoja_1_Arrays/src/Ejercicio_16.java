@@ -26,20 +26,20 @@ for(int i=0; i<=n-1; i++){
 System.out.println("Introduce el dato que quieras borrar del array:");
 dato=teclado.nextInt();
 borrar(a,n,dato);
-MetodosArrays.visualizarArray(a, n);
+
 
 }
 	
 //----------------------------------------------------------
 	public static void borrar (int a[], int n, int dato){
 		
-		int i = dato;
-		
-		while(i<=n-2){
-			a[i]=a[i+1];
-			i++;
-		}
-		a[n-1]=0;
-		n--;
+		int pos;
+		do{
+			pos=MetodosArrays.busquedaSecuencial(a, n, dato);
+			if(pos!=-1){
+			MetodosArrays.borrarElemento(a, n, pos);
+			}
+		}while(pos!=-1);
+		MetodosArrays.visualizarArray(a, n);
 		}
 }

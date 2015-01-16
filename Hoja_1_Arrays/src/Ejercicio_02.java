@@ -1,5 +1,5 @@
 /*
- * 2. Leer 10 enteros, almacenarlos en un vector y determinar 
+ *Leer 10 enteros, almacenarlos en un vector y determinar 
  * en qué posición del vector está el mayor número primo leído.
  */
 public class Ejercicio_02 {
